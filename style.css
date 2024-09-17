@@ -1,0 +1,16 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+
+@font-face {
+    font-family: 'Theriven'; /* Nama yang akan digunakan dalam Tailwind */
+    src: url('/font/theriven.ttf') format('truetype'); /* Path ke file font */
+    font-weight: serif; /* Atur sesuai dengan berat font */
+    font-style: normal; /* Sesuaikan jika font miring */
+  }
+
+html{
+    scroll-behavior: smooth;
+}

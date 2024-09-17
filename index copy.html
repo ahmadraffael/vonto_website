@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VONTO™ | Shoot Fast💥</title>
+  <link rel="icon" href="img/vonto_icon.png">
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+</head>
+
+
+<body>
+  <div>
+    <!-- Header -->
+    <nav class="bg-white border-gray-200 sticky top-0 z-50">
+      <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-3">
+        <img class="h-8 flex items-center space-x-3 rtl:space-x-reverse" src="img/vonto_logo.png" />
+
+        <button data-collapse-toggle="navbar-default" type="button"
+          class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
+          aria-controls="navbar-default" aria-expanded="false">
+          <span class="sr-only">Open main menu</span>
+          <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M1 1h15M1 7h15M1 13h15" />
+          </svg>
+        </button>
+        <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+          <ul
+            class="font-semibold flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-6 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white">
+            <li>
+              <a href="#"
+                class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-[#ff4c00] md:p-0"
+                aria-current="page">Home</a>
+            </li>
+            <li>
+              <a href="#about"
+                class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-[#ff4c00] md:p-0">About</a>
+            </li>
+            <li>
+              <a href="#services"
+                class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-[#ff4c00] md:p-0">Services</a>
+            </li>
+            <li>
+              <a href="#faq"
+                class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-[#ff4c00] md:p-0">FAQ</a>
+            </li>
+            <li>
+              <a href="#gallery"
+                class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-[#ff4c00] md:p-0">Gallery</a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/ahmadrffl/" target="_blank" 
+              class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-[#ff4c00] md:p-0">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero -->
+    <section id="home" class="relative h-[84vh] mx-5 sm:mx-10 overflow-hidden rounded-lg flex items-center justify-center">
+      <!-- Swiper-->
+      <div class="swiper-container absolute inset-0 z-0">
+        <div class="swiper-wrapper">
+          <!-- Slide 1 -->
+          <div class="swiper-slide bg-[url('cars/car_11.jpeg')] bg-cover bg-center w-full h-full"></div>
+          <!-- Slide 2 -->
+          <div class="swiper-slide bg-[url('cars/car_6.jpeg')] bg-cover bg-center w-full h-full"></div>
+        </div>
+      </div>
+      <!-- Gradasi -->
+      <div class="absolute inset-0 bg-gradient-to-t from-[rgba(0,0,0,0.9)] via-[rgba(0,0,0,0.5)] to-[rgba(0,0,0,0.2)]">
+      </div>
+      <!-- Teks -->
+      <div class="relative z-10 text-white p-8">
+        <h1 class="text-6xl sm:text-8xl font-theriven font-black">WE SHOOT FAST</h1>
+        <p class="sm:text-2xl text-lg font-normal mt-1 sm:mt-4">VONTO always shoot fast, that's it!.</p>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section data-aos="fade-up" id="about" class="mx-5 sm:mx-10 h-[100vh] flex flex-col items-center justify-center">
+
+      <h1 class="font-bold sm:text-5xl text-4xl text-center">About Us</h1>
+
+      <div data-aos="zoom-in-up" data-aos-duration="800" class="mt-5 transform transition duration-200 hover:scale-105">
+        <div
+          class="bg-[url(img/vonto_logo.png)] bg-cover bg-center bg-[#FF660A] sm:w-[90vh] sm:h-auto w-[70vw] h-auto rounded-lg p-3 sm:p-5">
+          <img src="img/vonto_logo_white.png">
+          <p class="text-justify text-white/90 text-sm sm:text-xl font-medium mt-1 sm:mt-3">
+            <span class="font-black">VONTO</span> is the number 1 High Speed Photography company in the world. We are
+            always creative, cool, & intentional in creating photos. We produce images that make people stop and look
+            (we're committed to that).
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section data-aos="fade-up" id="services" class="mx-5 sm:mx-10 h-[100vh] flex flex-col justify-center">
+      <h1 class="font-bold sm:text-5xl text-4xl text-center">Our Services</h1>
+
+      <div class="grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2  grid-cols-2 gap-2 mt-5">
+        <div data-aos="flip-right" data-aos-duration="1200" 
+          class="transform transition duration-200 hover:scale-95 group bg-[#FF660A] sm:w-auto sm:h-auto w-auto h-auto rounded-lg flex flex-col items-center p-5">
+          <h1 class="mb-1 sm:mb-2 font-black text-white sm:text-3xl text-2xl">STREET RACER</h1>
+          <p class="font-medium sm:text-base text-sm text-white">City street car shoot with 30 quick edit photos and
+            online gallery.</p>
+        </div>
+        <div data-aos="flip-right" data-aos-duration="1200" 
+          class="transform transition duration-200 hover:scale-95 group bg-[#FF660A] sm:w-auto sm:h-auto w-auto h-auto rounded-lg flex flex-col items-center p-5">
+          <h1 class="mb-1 sm:mb-2 font-black text-white sm:text-3xl text-2xl">TRACK DAY</h1>
+          <p class="font-medium sm:text-base text-sm text-white">Epic shots on the track with 70 pro-level photos and
+            action-packed racing videos.</p>
+        </div>
+        <div data-aos="flip-right" data-aos-duration="1200" 
+          class="transform transition duration-200 hover:scale-95 group bg-[#FF660A] sm:w-auto sm:h-auto w-auto h-auto rounded-lg flex flex-col items-center p-5">
+          <h1 class="mb-1 sm:mb-2 font-black text-white sm:text-3xl text-2xl">SHOWROOM</h1>
+          <p class="font-medium sm:text-base text-sm text-white">Sleek car photos in the showroom, including 100 finely
+            retouched images and a cinematic branding video.</p>
+        </div>
+        <div data-aos="flip-right" data-aos-duration="1200" 
+          class="transform transition duration-200 hover:scale-95 group bg-[#FF660A] sm:w-auto sm:h-auto w-auto h-auto rounded-lg flex flex-col items-center p-5">
+          <h1 class="mb-1 sm:mb-2 font-black text-white sm:text-3xl text-2xl">ELITE</h1>
+          <p class="font-medium sm:text-base text-sm text-white">Shoot at the coolest locations and racing events, with
+            150 jaw-dropping photos, video highlights, and high-quality prints</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section data-aos="fade-up" id="faq" class="mx-5 sm:mx-10 h-[99vh] flex flex-col justify-center overflow-hidden bg-[#ff4c00] rounded-lg">
+      <h1 class="font-bold sm:text-5xl text-4xl text-center text-white">FAQ</h1>
+
+      <div class="px-8 max-w-5xl mx-auto flex flex-col md:flex-row gap-12 mt-5">
+        <ul class="flex-1">
+          <li>
+            <button
+              class="relative flex gap-2 items-center w-full py-5 text-lg font-bold text-left border-t md:text-lg border-white"
+              aria-expanded="false" onclick="toggleFAQ(this)">
+              <span class="flex-1 text-base-content text-white">What are the differences between each package</span>
+              <svg class="flex-shrink-0 w-4 h-4 ml-auto fill-current text-white" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                <rect y="7" width="16" height="2" rx="1" class="transform origin-center transition duration-200 ease-out false"></rect>
+                <rect y="7" width="16" height="2" rx="1" class="transform origin-center rotate-90 transition duration-200 ease-out false"></rect>
+              </svg>
+            </button>
+            <div class="transition-all duration-300 ease-in-out max-h-0 overflow-hidden"
+              style="transition: max-height 0.3s ease-in-out 0s;">
+              <div class="pb-5 leading-relaxed">
+                <div class="space-y-2 leading-relaxed text-lg text-white">Each photography package offers a distinct experience,
+                  with various levels of detail, location options, and features designed to meet specific automotive
+                  photography needs.</div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <button
+              class="relative flex gap-2 items-center w-full py-5 text-lg font-bold text-left border-t md:text-lg border-white"
+              aria-expanded="false" onclick="toggleFAQ(this)">
+              <span class="flex-1 text-base-content text-white">How can I book a photography package?</span>
+              <svg class="flex-shrink-0 w-4 h-4 ml-auto fill-current text-white" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                <rect y="7" width="16" height="2" rx="1" class="transform origin-center transition duration-200 ease-out false"></rect>
+                <rect y="7" width="16" height="2" rx="1" class="transform origin-center rotate-90 transition duration-200 ease-out false"></rect>
+              </svg>
+            </button>
+            <div class="transition-all duration-300 ease-in-out max-h-0 overflow-hidden"
+              style="transition: max-height 0.3s ease-in-out 0s;">
+              <div class="pb-5 leading-relaxed">
+                <div class="space-y-2 leading-relaxed text-lg text-white">You can book a You can book a package by contacting us.
+                  Once you have selected your desired package, our team will coordinate a schedule and location that
+                  suits your needs.</div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <button
+              class="relative flex gap-2 items-center w-full py-5 text-lg font-bold text-left border-t md:text-lg border-white"
+              aria-expanded="false" onclick="toggleFAQ(this)">
+              <span class="flex-1 text-base-content text-white">What should I prepare before the photo session?</span>
+              <svg class="flex-shrink-0 w-4 h-4 ml-auto fill-current text-white" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                <rect y="7" width="16" height="2" rx="1" class="transform origin-center transition duration-200 ease-out false"></rect>
+                <rect y="7" width="16" height="2" rx="1" class="transform origin-center rotate-90 transition duration-200 ease-out false"></rect>
+              </svg>
+            </button>
+            <div class="transition-all duration-300 ease-in-out max-h-0 overflow-hidden"
+              style="transition: max-height 0.3s ease-in-out 0s;">
+              <div class="pb-5 leading-relaxed">
+                <div class="space-y-2 leading-relaxed text-lg text-white">Ensure your car is in top condition and clean prior to
+                  the shoot. For packages involving specific locations or events, please inform us of your preferred
+                  locations and times. Our team will handle all the technical details to ensure the best results.</div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Gallery -->
+    <section data-aos="fade-up" id="gallery" class="mx-5 sm:mx-10 h-auto flex flex-col my-14">
+      <h1 class="font-bold sm:text-5xl text-4xl text-center">Gallery</h1>
+
+      <div class="gap-2 mt-5 lg:columns-5 md:columns-4 sm:columns-3 columns-2">
+        <div data-aos="zoom-in-up" class="group relative overflow-hidden rounded-lg mb-3">
+          <img src="cars/car_1.jpeg" class="w-full h-full object-cover transform transition-transform duration-300 group-hover:scale-105"/>
+        </div>
+        <div data-aos="zoom-in-up" class="group relative overflow-hidden rounded-lg mb-3">
+          <img src="cars/car_2.jpeg" class="w-full h-full object-cover transform transition-transform duration-300 group-hover:scale-105"/>
+        </div>
+        <div data-aos="zoom-in-up" class="group relative overflow-hidden rounded-lg mb-3">
+          <img src="cars/car_3.jpeg" class="w-full h-full object-cover transform transition-transform duration-300 group-hover:scale-105"/>
+        </div>
+        <div data-aos="zoom-in-up" class="group relative overflow-hidden rounded-lg mb-3">
+          <img src="cars/car_4.jpeg" class="w-full h-full object-cover transform transition-transform duration-300 group-hover:scale-105"/>
+        </div>
+        <div data-aos="zoom-in-up" class="group relative overflow-hidden rounded-lg mb-3">
+          <img src="cars/car_6.jpeg" class="w-full h-full object-cover transform transition-transform duration-300 group-hover:scale-105"/>
+        </div>
+        <div data-aos="zoom-in-up" class="group relative overflow-hidden rounded-lg mb-3">
+          <img src="cars/car_7.jpeg" class="w-full h-full object-cover transform transition-transform duration-300 group-hover:scale-105"/>
+        </div>
+        <div data-aos="zoom-in-up" class="group relative overflow-hidden rounded-lg mb-3">
+          <img src="cars/car_8.jpeg" class="w-full h-full object-cover transform transition-transform duration-300 group-hover:scale-105"/>
+        </div>
+        <div data-aos="zoom-in-up" class="group relative overflow-hidden rounded-lg mb-3">
+          <img src="cars/car_9.jpeg" class="w-full h-full object-cover transform transition-transform duration-300 group-hover:scale-105"/>
+        </div>
+        <div data-aos="zoom-in-up" class="group relative overflow-hidden rounded-lg mb-3">
+          <img src="cars/car_10.jpeg" class="w-full h-full object-cover transform transition-transform duration-300 group-hover:scale-105"/>
+        </div>
+        <div data-aos="zoom-in-up" class="group relative overflow-hidden rounded-lg mb-3">
+          <img src="cars/car_11.jpeg" class="w-full h-full object-cover transform transition-transform duration-300 group-hover:scale-105"/>
+        </div>
+        <div data-aos="zoom-in-up" class="group relative overflow-hidden rounded-lg mb-3">
+          <img src="cars/car_12.jpeg" class="w-full h-full object-cover transform transition-transform duration-300 group-hover:scale-105"/>
+        </div>
+        <div data-aos="zoom-in-up" class="group relative overflow-hidden rounded-lg mb-3">
+          <img src="cars/car_13.jpeg" class="w-full h-full object-cover transform transition-transform duration-300 group-hover:scale-105"/>
+        </div>
+        <div data-aos="zoom-in-up" class="group relative overflow-hidden rounded-lg mb-3">
+          <img src="cars/car_14.jpeg" class="w-full h-full object-cover transform transition-transform duration-300 group-hover:scale-105"/>
+        </div>
+        <div data-aos="zoom-in-up" class="group relative overflow-hidden rounded-lg mb-3">
+          <img src="cars/car_15.jpeg" class="w-full h-full object-cover transform transition-transform duration-300 group-hover:scale-105"/>
+        </div>
+        <div data-aos="zoom-in-up" class="group relative overflow-hidden rounded-lg mb-3">
+          <img src="cars/car_16.jpeg" class="w-full h-full object-cover transform transition-transform duration-300 group-hover:scale-105"/>
+        </div>
+        <div data-aos="zoom-in-up" class="group relative overflow-hidden rounded-lg mb-3">
+          <img src="cars/car_17.jpeg" class="w-full h-full object-cover transform transition-transform duration-300 group-hover:scale-105"/>
+        </div>
+        <div data-aos="zoom-in-up" class="group relative overflow-hidden rounded-lg mb-3">
+          <img src="cars/car_18.jpeg" class="w-full h-full object-cover transform transition-transform duration-300 group-hover:scale-105"/>
+        </div>
+        <div data-aos="zoom-in-up" class="group relative overflow-hidden rounded-lg mb-3">
+          <img src="cars/car_19.jpeg" class="w-full h-full object-cover transform transition-transform duration-300 group-hover:scale-105"/>
+        </div>
+        <div data-aos="zoom-in-up" class="group relative overflow-hidden rounded-lg mb-3">
+          <img src="cars/car_20.jpeg" class="w-full h-full object-cover transform transition-transform duration-300 group-hover:scale-105"/>
+        </div>
+        <div data-aos="zoom-in-up" class="group relative overflow-hidden rounded-lg mb-3">
+          <img src="cars/car_21.jpeg" class="w-full h-full object-cover transform transition-transform duration-300 group-hover:scale-105"/>
+        </div>
+        <div data-aos="zoom-in-up" class="group relative overflow-hidden rounded-lg mb-3">
+          <img src="cars/car_22.jpeg" class="w-full h-full object-cover transform transition-transform duration-300 group-hover:scale-105"/>
+        </div>
+        <div data-aos="zoom-in-up" class="group relative overflow-hidden rounded-lg mb-3">
+          <img src="cars/car_23.jpeg" class="w-full h-full object-cover transform transition-transform duration-300 group-hover:scale-105"/>
+        </div>
+        <div data-aos="zoom-in-up" class="group relative overflow-hidden rounded-lg mb-3">
+          <img src="cars/car_24.jpeg" class="w-full h-full object-cover transform transition-transform duration-300 group-hover:scale-105"/>
+        </div>
+        <div data-aos="zoom-in-up" class="group relative overflow-hidden rounded-lg mb-3">
+          <img src="cars/car_25.jpeg" class="w-full h-full object-cover transform transition-transform duration-300 group-hover:scale-105"/>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="">
+      <div class="bg-[#ff4c00] px-5 py-2 flex items-center sm:flex-row flex-col">
+        <img class="h-4 w-auto" src="img/vonto_logo_white.png">
+        <p class="text-sm text-white sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-2">© 2020 Tailblocks —
+          <a href="https://twitter.com/knyttneve" class="text-white ml-1" rel="noopener noreferrer" target="_blank">@ahmadrffl</a>
+        </p>
+        <span class="inline-flex sm:ml-auto sm:mt-0 mt-2 justify-center sm:justify-start">
+          <a class="text-white">
+            <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+              <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+            </svg>
+          </a>
+          <a class="ml-3 text-white">
+            <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+              <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+            </svg>
+          </a>
+          <a class="ml-3 text-white">
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+              <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+              <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+            </svg>
+          </a>
+          <a class="ml-3 text-white">
+            <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
+              <path stroke="none" d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
+              <circle cx="4" cy="4" r="2" stroke="none"></circle>
+            </svg>
+          </a>
+        </span>
+      </div>
+    </footer>
+
+    <!-- INI SCRIPT -->
+    <!-- navbar -->
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        const menuButton = document.querySelector('[data-collapse-toggle]');
+        const menu = document.getElementById(menuButton.getAttribute('aria-controls'));
+    
+        menuButton.addEventListener('click', function () {
+          const isExpanded = menuButton.getAttribute('aria-expanded') === 'true';
+          menuButton.setAttribute('aria-expanded', !isExpanded);
+          menu.classList.toggle('hidden');
+        });
+      });
+    </script>
+    <!-- aos animate -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <!-- swipernya -->
+    <script>
+      var swiper = new Swiper('.swiper-container', {
+        loop: true,
+        autoplay: {
+          delay: 5000,
+          speed: 2000,
+        },
+        effect: 'slide',
+      });
+    </script>
+    <!-- yang FAQ -->
+    <script>
+      function toggleFAQ(button) {
+        const content = button.nextElementSibling;
+        button.setAttribute("aria-expanded", button.getAttribute("aria-expanded") === "false" ? "true" : "false");
+        content.style.maxHeight = button.getAttribute("aria-expanded") === "true" ? content.scrollHeight + "px" : "0";
+      }
+    </script>
+</body>
+
+</html>
