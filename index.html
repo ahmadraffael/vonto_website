@@ -7,11 +7,11 @@
   <title>VONTO™ | Shoot Fast💥</title>
   <link rel="icon" href="img/vonto_icon.png">
 
+  <link href="src/output.css" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 
-  <script src="https://cdn.tailwindcss.com"></script>
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 </head>
 
@@ -70,10 +70,8 @@
       <!-- Swiper-->
       <div class="swiper-container absolute inset-0 z-0">
         <div class="swiper-wrapper">
-          <!-- Slide 1 -->
-          <div class="swiper-slide bg-[url('cars/car_11.jpeg')] bg-cover bg-center w-full h-full"></div>
-          <!-- Slide 2 -->
-          <div class="swiper-slide bg-[url('cars/car_6.jpeg')] bg-cover bg-center w-full h-full"></div>
+          <div class="swiper-slide" style="background-image: url('cars/car_6.jpeg'); background-size: cover; background-position: center;"></div>
+          <div class="swiper-slide" style="background-image: url('cars/car_11.jpeg'); background-size: cover; background-position: center;"></div>
         </div>
       </div>
       <!-- Gradasi -->
@@ -81,8 +79,8 @@
       </div>
       <!-- Teks -->
       <div class="relative z-10 text-white p-8">
-        <h1 class="text-6xl sm:text-8xl font-theriven font-black">WE SHOOT FAST</h1>
-        <p class="sm:text-2xl text-lg font-normal mt-1 sm:mt-4">VONTO always shoot fast, that's it!.</p>
+        <h1 class="text-6xl sm:text-8xl font-black">WE SHOOT FAST</h1>
+        <p class="sm:text-2xl text-lg font-normal mt-1 sm:mt-2">VONTO always shoot fast, that's it!.</p>
       </div>
     </section>
 
@@ -93,7 +91,8 @@
 
       <div data-aos="zoom-in-up" data-aos-duration="800" class="mt-5 transform transition duration-200 hover:scale-105">
         <div
-          class="bg-[url(img/vonto_logo.png)] bg-cover bg-center bg-[#FF660A] sm:w-[90vh] sm:h-auto w-[70vw] h-auto rounded-lg p-3 sm:p-5">
+          style="background-image: url('img/vonto_logo.png'); background-size: cover; background-position: center;"
+          class="bg-cover bg-center bg-[#FF660A] sm:w-[90vh] sm:h-auto w-[70vw] h-auto rounded-lg p-3 sm:p-5">
           <img src="img/vonto_logo_white.png">
           <p class="text-justify text-white/90 text-sm sm:text-xl font-medium mt-1 sm:mt-3">
             <span class="font-black">VONTO</span> is the number 1 High Speed Photography company in the world. We are
