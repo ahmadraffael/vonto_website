@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trenly</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.0.24/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 text-gray-900">
+
+    <!-- Navbar -->
+    <nav class="bg-white border-b border-gray-200 shadow-md fixed w-full top-0 z-50">
+        <div class="max-w-screen-xl mx-auto flex items-center justify-between p-4">
+            <a href="#" class="text-2xl font-bold">Trenly</a>
+            <ul class="flex space-x-6">
+                <li><a href="#home" class="hover:text-blue-500">Home</a></li>
+                <li><a href="#about" class="hover:text-blue-500">About</a></li>
+                <li><a href="#faq" class="hover:text-blue-500">FAQ</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Home -->
+    <section id="home" class="flex items-center justify-center min-h-screen bg-blue-200">
+        <div class="text-center">
+            <h1 class="text-4xl font-bold mb-4">Welcome to Trenly</h1>
+            <p class="text-lg">Discover the latest trends and stay ahead of the curve.</p>
+        </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="py-20 bg-white">
+        <div class="max-w-screen-xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-8">About Us</h2>
+            <p class="text-lg text-center">We are passionate about bringing you the latest trends and insights. Our team is dedicated to providing accurate and up-to-date information to help you stay informed.</p>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="py-20 bg-gray-100">
+        <div class="max-w-screen-xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-8">Frequently Asked Questions</h2>
+            <div class="space-y-4">
+                <!-- FAQ Item -->
+                <div class="bg-white p-4 rounded-lg shadow-md">
+                    <button class="flex justify-between w-full text-left font-semibold py-2" onclick="toggleFAQ(this)">
+                        <span>How does Trenly work?</span>
+                        <svg class="w-4 h-4 fill-current" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                            <rect y="7" width="16" height="2" rx="1" class="transform origin-center transition-transform duration-300"></rect>
+                            <rect y="7" width="16" height="2" rx="1" class="transform origin-center rotate-90 transition-transform duration-300"></rect>
+                        </svg>
+                    </button>
+                    <div class="max-h-0 overflow-hidden transition-max-height duration-300 ease-in-out">
+                        <p class="mt-2">Trenly aggregates the latest trends from various sources and presents them in a user-friendly format to keep you informed.</p>
+                    </div>
+                </div>
+                <!-- Add more FAQ items as needed -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-4">
+        <div class="max-w-screen-xl mx-auto text-center">
+            <p>&copy; 2024 Trenly. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        function toggleFAQ(button) {
+            const content = button.nextElementSibling;
+            const isOpen = content.classList.contains('max-h-0');
+            content.classList.toggle('max-h-0', !isOpen);
+            content.classList.toggle('max-h-screen', isOpen);
+        }
+    </script>
+
+</body>
+</html>

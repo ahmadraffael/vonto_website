@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sport Car Photography</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.0.24/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+    .scrollbar-hidden::-webkit-scrollbar {
+      display: none;
+    }
+  </style>
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+  <!-- Navbar -->
+  <nav class="bg-black text-white fixed w-full top-0 left-0 z-50 shadow-md">
+    <div class="max-w-screen-xl mx-auto px-4 py-3 flex justify-between items-center">
+      <a href="#" class="text-2xl font-bold">SportCarPhoto</a>
+      <button id="menu-btn" class="md:hidden text-white">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+        </svg>
+      </button>
+      <ul id="menu" class="hidden md:flex space-x-6">
+        <li><a href="#home" class="hover:underline">Home</a></li>
+        <li><a href="#about" class="hover:underline">About</a></li>
+        <li><a href="#services" class="hover:underline">Services</a></li>
+        <li><a href="#faq" class="hover:underline">FAQ</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div id="mobile-menu" class="fixed inset-0 bg-black bg-opacity-75 z-40 hidden">
+    <div class="flex justify-end p-4">
+      <button id="close-menu" class="text-white">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+        </svg>
+      </button>
+    </div>
+    <div class="flex flex-col items-center space-y-6 text-white">
+      <a href="#home" class="text-xl hover:underline">Home</a>
+      <a href="#about" class="text-xl hover:underline">About</a>
+      <a href="#services" class="text-xl hover:underline">Services</a>
+      <a href="#faq" class="text-xl hover:underline">FAQ</a>
+    </div>
+  </div>
+
+  <!-- Home Section -->
+  <section id="home" class="h-screen bg-cover bg-center relative" style="background-image: url('your-image-path.jpg');">
+    <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
+      <h1 class="text-white text-4xl md:text-6xl font-bold text-center">Capturing the Essence of Sport Cars</h1>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="py-16 px-4">
+    <div class="max-w-screen-xl mx-auto">
+      <h2 class="text-3xl font-semibold text-center mb-8">About Us</h2>
+      <p class="text-lg text-gray-700">At SportCarPhoto, we specialize in capturing stunning images of sport cars, whether it's in the studio, at racing events, or on the streets. Our passion for automotive photography ensures that every shot showcases the elegance and power of these incredible vehicles.</p>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="py-16 bg-gray-200">
+    <div class="max-w-screen-xl mx-auto px-4">
+      <h2 class="text-3xl font-semibold text-center mb-8">Our Services</h2>
+      <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+        <div class="bg-white p-6 rounded-lg shadow-lg">
+          <h3 class="text-xl font-semibold mb-4">Studio Photography</h3>
+          <p>Professional studio sessions for your sport cars with top-notch lighting and backgrounds.</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-lg">
+          <h3 class="text-xl font-semibold mb-4">Event Coverage</h3>
+          <p>Capturing thrilling moments from racing events and car shows.</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-lg">
+          <h3 class="text-xl font-semibold mb-4">Street Photography</h3>
+          <p>Dynamic and urban shots of your sport cars in real-world settings.</p>
+        </div>
+        <!-- Add more services if needed -->
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section id="faq" class="py-16 px-4">
+    <div class="max-w-screen-xl mx-auto">
+      <h2 class="text-3xl font-semibold text-center mb-8">Frequently Asked Questions</h2>
+      <div class="space-y-4">
+        <div class="bg-white p-6 rounded-lg shadow-lg">
+          <button class="w-full text-left text-lg font-semibold flex items-center justify-between" onclick="toggleFAQ(this)">
+            <span>What is your pricing?</span>
+            <svg class="w-4 h-4 transform transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+            </svg>
+          </button>
+          <div class="mt-2 max-h-0 overflow-hidden transition-all duration-300">
+            <p>Our pricing varies depending on the service and duration. Please contact us for a customized quote.</p>
+          </div>
+        </div>
+        <!-- Add more FAQs if needed -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-black text-white py-6">
+    <div class="max-w-screen-xl mx-auto px-4 text-center">
+      <p>&copy; 2024 SportCarPhoto. All rights reserved.</p>
+      <p><a href="#" class="hover:underline">Privacy Policy</a> | <a href="#" class="hover:underline">Terms of Service</a></p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('menu-btn').addEventListener('click', () => {
+      document.getElementById('mobile-menu').classList.toggle('hidden');
+    });
+    document.getElementById('close-menu').addEventListener('click', () => {
+      document.getElementById('mobile-menu').classList.add('hidden');
+    });
+    function toggleFAQ(button) {
+      const content = button.nextElementSibling;
+      const icon = button.querySelector('svg');
+      content.classList.toggle('max-h-0');
+      icon.classList.toggle('rotate-180');
+    }
+  </script>
+  
+</body>
+</html>
